@@ -1,0 +1,20 @@
+dashboard:
+  overview: Ülevaade
+  insights: Arusaamu
+  forecast: Prognoos
+  menu: Menüü
+
+button:
+  about: Eesti kkele
+  back: Whi kones
+  go: Lahen
+  home: main
+  toggle_dark: tume mood
+  toggle_langs: keel sometjing
+intro:
+  Vitesse: Vitesse
+  desc: Vite shabloni
+  dynamic-route: dynamics robots
+  hi: Tere, {name}!
+  whats-your-name: Mis sinu nimi on?
+not-found: Pole found
