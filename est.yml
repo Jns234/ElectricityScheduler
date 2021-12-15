@@ -1,0 +1,50 @@
+dashboard:
+  overview: Ülevaade
+  insights: Arusaamu
+  forecast: Prognoos
+  menu: Menüü
+
+button:
+  about: Eesti kele
+  back: tagasi
+  go: Lahen
+  home: main
+  toggle-dark: tume mood
+  toggle-langs: muudake keel
+  current: praegu
+  Expected: oodata
+  notify: Teavita mind
+  go-dashboard: dashbordile liikute
+
+intro:
+  Vitesse: Vitesse
+  desc: Vite shabloni
+  dynamic-route: dynamics tee
+  hi: Tere, {nimi}!
+  stats: Teie statistika on valmis
+  whats-your-name: Mis sinu nimi on?
+  aka: tuntud kui
+
+not-found: Pole Leitud
+
+title:
+  text: Alusta elektri tarbimist nutikamalt kui kunagi varem 
+  recommendations: Soovitused
+  exchange: Elektribörsi hind
+  news: Sul on uudiseid!
+  welcome: tere tulemast Dashbordile
+  price-now: hind hetkel
+  experience: Täiustage oma kogemust
+ 
+undertext:
+  price: EUR per KWh
+  chart: \*Diagramm näitab, kui palju erinevad tänased väärtused homsetest protsentides
+  provide: Pakume teile isikupärastatud näpunäiteid ja nipid, kuidas suurendada oma odavaim elektritarbimine
+  help: Aitame planeerida teie elektritarbimist, mõista praegust olukorda turul ja kohaneda paremini börsihindade kasvuga
+
+recommended: 
+  consume: Püüa mitte palju tarbida!
+  light: Ärge unusta tulesid välja lülitada.
+  no-recommendations: \...
+  phone: pange oma telefoni laadima ööl
+  night: ööl elektri hind on madalam kui päeval

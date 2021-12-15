@@ -1,0 +1,46 @@
+dashboard:
+  overview: Обзор
+  insights: Идеи
+  forecast: Прогноз
+  menu: Меню
+
+button:
+  about: О шаблоне
+  back: Назад
+  go: Перейти
+  home: Главная
+  toggle-dark: Включить темный режим
+  toggle-langs: Сменить язык
+  current: Нынешний
+  expected: Ожидаемый
+  notify: Уведомить меня
+  go-dashboard: На главную
+
+intro:
+  Vitesse: Витессе
+  desc: Самостоятельный начальный шаблон Vite
+  dynamic-route: Демо динамического маршрута
+  hi: Привет, {name}!
+  stats: Ваша статистика готова
+  aka: Известен как
+  whats-your-name: Как тебя зовут?
+
+not-found: Не найден
+
+title:
+  text: Начни потреблять электричество умнее, чем прежде
+  recommendations: Рекомендации
+  exchange: Цена обмена на электроэнергию
+  news: У вас весть!
+  welcome: Добро пожаловать
+  price-now: цена сейчас
+  experience: Улучши свой опыт
+
+undertext:
+  price: Евро за кВт/ч
+  chart: \*The chart shows how much the values of today differ from tomorrow in precentage График показывает насколько значения сегодня отличаются от завтра в процентах
+  provide: We will provide you personalized tips and tricks to decrease your electricity consumption. Мы предоставляем вам персонализированные советы для понижения энергопотребления  
+  help: Мы покажем вам ваше энергопотребление и цену електричества на рынке а так же поможем вам организовать электропотребление в доме
+
+recommended:
+

@@ -1,0 +1,51 @@
+dashboard:
+  overview: Overview
+  insights: Insights
+  forecast: Forecast
+  menu: Menu
+
+button:
+  about: About
+  back: Back
+  go: Go
+  home: Home
+  toggle-dark: Toggle dark mode
+  toggle-langs: Change languages
+  current: Current
+  expected: Expected
+  notify: Notify me
+  go-dashboard: Go to the dashboard
+
+intro:
+  Vitesse: Vitesse
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  stats: Your stats are ready
+  aka: Also known as
+  whats-your-name: What's your name?
+
+not-found: Not found
+
+title:
+  text: Start consuming electricity smarter than ever
+  recommendations: Recommendations
+  exchange: Electricity exchange price
+  news: You have some news!
+  welcome: Welcome to the dashboard
+  price-now: The price for now
+  experience: Enhance your experience
+
+undertext:
+  price: EUR per KWh
+  chart: The chart shows how much the vaules of today differ from tomorrow in precentage
+  provide: We will provide you personalized tips and tricks to increase your cheapest electricity consumption.
+  help: We will help you to schedule your electricity consumption, understand the current situation on the market and adapt to the exchange prices growth better
+
+recommended: 
+  consume: Try not to consume much!
+  light: Don't forget to turn off the lights.
+  no-recommendations: \...
+  telefon: put your phone charge at night
+  night: the price of electricity at night is lower than during the day
+
