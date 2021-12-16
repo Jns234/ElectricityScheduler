@@ -1,5 +1,5 @@
 <template>
-  <main class="px-24px py-60px text-center text-gray-700 dark:text-gray-200">
+  <main class="px-24 py-10 w-screen h-screen">
     <Header />
     <router-view />
     <!--<Footer />-->

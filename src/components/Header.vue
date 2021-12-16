@@ -1,47 +1,86 @@
 <script setup lang="ts">
-import Menu1 from "./Menu.vue";
 
-const { t } = useI18n()
+import { useRoute } from 'vue-router';
+import { ref } from 'vue'
+import { isDark, toggleDark } from '~/composables'
 
-/*const toggleMenu = () => {
-  console.log("here")
-}*/
+const { t, availableLocales, locale } = useI18n()
 
-// languge changing logic
-/*const toggleLocales = () => {
+const toggleLocales = (local: any) => {
   const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}*/
 
-let active :boolean = false;
+  for (let i = 0; i < locales.length; i++) {
+    if (locales[i] == local) {
+      locale.value = locales[i]
+    }
+  }
+}
+
+const active = ref(0);
+
+const currentRoute = computed(() => {
+  return useRoute().name
+})
+
+console.log(currentRoute.value)
+
+active.value = currentRoute.value
+//active.value = "Home"
+
+/*const togglePage = (page: String) => {
+  console.log(page)
+  active = page
+  return active
+}*/
 
 </script>
 
 <template>
-  <nav class="flex flex-row justify-between align-center text-lg">
+  <nav class="flex flex-row justify-between align-center text-lg <sm:(flex-col)">
     <router-link class="" to="/" :title="t('button.home')">
       <span class="text-black dark:text-white text-3xl">
         Smart<span class="font-500">Energia</span>
       </span>
     </router-link>
 
-    <div class="flex flex-row justify-between align-center ml-auto mr-20 opacity-75 text-black dark:text-white">
-      <router-link to="/" class="m-4">
-        <span>Privacy Policy</span>
+    <div class="flex flex-row justify-between align-center ml-auto mr-20 text-black dark:text-white <xl:hidden">
+      <router-link to="/" class="m-4" @click="active = 'Home'">
+        <!--<span v-if="active == 'Home'" class="opacity-100 border-bottom">Home</span>
+        <span v-else class="opacity-75">Home</span>-->
+        <span v-if="active == 'index1'" class="opacity-100 border-bottom">Home</span>
+        <span v-else class="opacity-75">Home</span>
       </router-link>
 
-      <router-link to="/" class="m-4">
-        <span>Terms & Conditions</span>
+      <router-link to="/dashboard" class="m-4" @click="active = 'Dashboard'">
+        <span v-if="active == 'dashboard'" class="opacity-100 border-bottom">Dashboard</span>
+        <span v-else class="opacity-75">Dashboard</span>
       </router-link>
 
-      <router-link to="/" class="m-4">
-        <span>About</span>
+      <router-link to="/" class="m-4" @click="active = 'About'">
+        <span v-if="active == 'about'" class="opacity-100 border-bottom">About</span>
+        <span v-else class="opacity-75">About</span>
       </router-link>
     </div>
 
-    <a class="dark:text-white text-black font-500 flex flex-row justify-left align-center cursor-pointer" @click="active=true">
-      <span class="mr-1">Menu</span>
-      <carbon-menu/>
-    </a>
+    <div class="flex flex-row">
+      <button class="icon-btn mx-2 dark:text-white text-black !outline-none mr-4" :title="t('button.toggle_dark')" @click="toggleDark()">
+        <carbon-moon v-if="isDark" />
+        <carbon-sun v-else />
+      </button>
+
+      <a class="dark:text-white text-black font-500 flex flex-row justify-left align-center cursor-pointer mr-2" @click="toggleLocales('et')">
+        <span class="mr-1">ET</span>
+        <!--<carbon-language/>-->
+      </a>
+      <a class="dark:text-white text-black font-500 flex flex-row justify-left align-center cursor-pointer mr-2" @click="toggleLocales('en')">
+        <span class="mr-1">EN</span>
+      </a>
+      <a class="dark:text-white text-black font-500 flex flex-row justify-left align-center cursor-pointer mr-2" @click="toggleLocales('ru')">
+        <span class="mr-1">RU</span>
+      </a>
+    </div>
+    
+
+
   </nav>
 </template>

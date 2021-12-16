@@ -50,7 +50,14 @@ html.dark {
   border-radius: 1.15rem;
 }
 
+.border-bottom {
+  border-bottom: 1px solid;
+  @apply dark:border-white border-black;
+}
 
+.none {
+  display: none;
+}
 
 /*.is-active {
   display: block;
