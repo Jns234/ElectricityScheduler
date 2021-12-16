@@ -15,6 +15,7 @@ button:
   expected: Expected
   notify: Notify me
   go-dashboard: Go to the dashboard
+  dashboard: Dashboard
 
 intro:
   Vitesse: Vitesse
@@ -35,17 +36,36 @@ title:
   welcome: Welcome to the dashboard
   price-now: The price for now
   experience: Enhance your experience
+  current-price: Current electricity price
+  expected-price: Expected electricity price
+  dropped: Has dropped since yesterday
+  expected-drop: Is expected to drop
+  sign-in: Sign in using Smart-ID
+  dashboard: Dashboard
+  status-on: Online
 
 undertext:
   price: EUR per KWh
-  chart: The chart shows how much the vaules of today differ from tomorrow in precentage
+  price2: EUR/MWh
+  chart: \*The chart shows how much the vaules of today differ from tomorrow in precentage
   provide: We will provide you personalized tips and tricks to increase your cheapest electricity consumption.
   help: We will help you to schedule your electricity consumption, understand the current situation on the market and adapt to the exchange prices growth better
+  today-price: Today's average price
+  weekly-price: Weekly average price
+  monthly-price: Monthly average price
+  yearly-price: Yearly average price
 
 recommended: 
   consume: Try not to consume much!
   light: Don't forget to turn off the lights.
   no-recommendations: \...
-  telefon: put your phone charge at night
+  boiler: Try to keep the boiler on for longer times, it saves electricity
+  phone: put your phone on charge at night
   night: the price of electricity at night is lower than during the day
 
+tips:
+  no-tips: \...
+  healthy: Remember to eat healthy!
+  workout: Don't forget to workout!
+  pet: Give your pets some attention!
+  break: Make sure not to overwork yourself!

@@ -14,7 +14,8 @@ button:
   current: Нынешний
   expected: Ожидаемый
   notify: Уведомить меня
-  go-dashboard: На главную
+  go-dashboard: На дэшборд
+  dashboard: Дэшборд
 
 intro:
   Vitesse: Витессе
@@ -35,12 +36,31 @@ title:
   welcome: Добро пожаловать
   price-now: цена сейчас
   experience: Улучши свой опыт
+  current-price: Нынешняя цена электричества
+  expected-price: Ожидаемая цена за электричество
+  dropped: снизилась со вчерашнего дня
+  expected-drop: Ожидаемое снижение цены
+  sign-in: Войти при помощи Smart-ID
+  dashboard: Дэшборд
 
 undertext:
-  price: Евро за кВт/ч
+  price: EUR per KWh
+  price2: EUR/MWh
   chart: \*The chart shows how much the values of today differ from tomorrow in precentage График показывает насколько значения сегодня отличаются от завтра в процентах
   provide: We will provide you personalized tips and tricks to decrease your electricity consumption. Мы предоставляем вам персонализированные советы для понижения энергопотребления  
   help: Мы покажем вам ваше энергопотребление и цену електричества на рынке а так же поможем вам организовать электропотребление в доме
 
 recommended:
+  consume: Пробуйте меньше потреблять!
+  light: Не забывайте выключить свет.
+  boiler: Старайтесть держать бойлер включенным дольше, это снижает энергопотребление
+  no-recommendations: \...
+  phone: Заряжайте свой телефон ночью
+  night: Электричество дешевле ночью, чем днём
 
+tips:
+  no-tips: \...
+  healthy: Не забывайте есть здоровую пищу!
+  workout: Не забывайте поддерживать ваше здоровье!
+  pet: Уделите внимание своим питомцам!
+  break: Постарайтесь не переутомиться!

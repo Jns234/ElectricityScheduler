@@ -15,6 +15,7 @@ button:
   Expected: oodata
   notify: Teavita mind
   go-dashboard: dashbordile liikute
+  dashboard: Dashboard
 
 intro:
   Vitesse: Vitesse
@@ -31,20 +32,40 @@ title:
   text: Alusta elektri tarbimist nutikamalt kui kunagi varem 
   recommendations: Soovitused
   exchange: Elektribörsi hind
-  news: Sul on uudiseid!
+  news: Sul on uudiseid!n   
   welcome: tere tulemast Dashbordile
   price-now: hind hetkel
   experience: Täiustage oma kogemust
- 
+  current-price: Praegune elektrihind
+  expected-price: oodatud elektrihimd
+  dropped: Vähenenud alates eilsest
+  expected-drop: oodatud vähenend
+  sign-in: Singing in using Smart-ID
+  dashboard: Dashboard
+  status-on: Online
+
 undertext:
   price: EUR per KWh
+  price2:  EUR/MWh
   chart: \*Diagramm näitab, kui palju erinevad tänased väärtused homsetest protsentides
   provide: Pakume teile isikupärastatud näpunäiteid ja nipid, kuidas suurendada oma odavaim elektritarbimine
   help: Aitame planeerida teie elektritarbimist, mõista praegust olukorda turul ja kohaneda paremini börsihindade kasvuga
+  today-price: Tänane keskmine hind
+  weekly-price: Nädala keskmine hind
+  monthly-price: kuu keskmine hind
+  yearly-price: asta keskmine hind
 
 recommended: 
   consume: Püüa mitte palju tarbida!
   light: Ärge unusta tulesid välja lülitada.
   no-recommendations: \...
+  boiler: Püüdke hoida boiler kauem töös, see säästab elektrit
   phone: pange oma telefoni laadima ööl
   night: ööl elektri hind on madalam kui päeval
+
+tips:
+  no-tips: \...
+  healthy: Olge terve
+  workout: tehke treening
+  pet: Pöörake oma lemmikloomadele tähelepanu!
+  break: Ole tähelepanelik et te ise üle ei töötaks!

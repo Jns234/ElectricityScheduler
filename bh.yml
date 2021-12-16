@@ -1,0 +1,51 @@
+dashboard:
+  overview: OverOrb
+  insights: B site
+  forecast: vanga time 
+  menu: menu
+
+button:
+  about: Nuffe?
+  back: tam
+  go: go
+  home: Paldiski
+  Toggle-dark: Nigga mode
+  Toggle-langs: brulanguages
+  current: now 
+  expected: expected
+  notify: why why spam!!!
+  go-dashboard: who
+
+Intro:  
+  Vitesse: Vitesse
+  desc: Tempwho
+  dynamic-route: Demo route
+  hi: ку 
+  stats: stats royele 
+  aka: ak 47
+  Whats-your-name: why are you
+
+not-found: nenaidenanto
+
+title: 
+  text: Episode II Return
+  recommendatsions: ask Andrey for recomendations
+  exchange: do you need bruh eurollar for bucks
+  news: breaking news you are adopted
+  welcome: wellCum
+  price-now: How much
+  experience: This is what you never have
+  current-price: Сколько?
+
+undertext: 
+  price: three hungred buks
+  chart: The chart shows how skoko the vaules of today differ from tomorrow in Giops
+  provide: Long time ago team bruxemburg won the hacaton...
+  help: you need help? Dont call us.
+
+recommeded:
+  consume: buy everething what you see
+  light: turn all lights to escape dark spirit
+  no-recommendations: try dilduino
+  phone: crash your phone because all web page hurt a tree
+  night: try not to use electriscity in the night ore OrB monster hurt you someday
