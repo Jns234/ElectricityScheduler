@@ -2,10 +2,11 @@
     <div>
         <h3>CLICK IT</h3>
         <button @click="getAPIinfo">Bruh</button>
+        <p>{{ data }}</p>
     </div>
 </template>
 <script>
-import { getPrice } from '../js/apijs.js';
+import { getPrice, SensorsAPI } from '../js/apijs.js';
 import {
  isPushNotificationSupported,
  sendNotification,
@@ -13,6 +14,11 @@ import {
  registerServiceWorker
 } from "../js/push-notifications.js";
 export default {
+    data() {
+        return{
+            data: "bruh"
+        }
+    },
     methods: {
         getAPIinfo: function(){
             var mode = 3;
@@ -20,6 +26,7 @@ export default {
             var param = "EE";
             getPrice(mode, param).then((result) => {
                 console.log(result)
+                this.data = result.data;
                 //console.log(result.data[0])
                 const pushNotificationSuported = isPushNotificationSupported();
                 if (pushNotificationSuported) {
@@ -31,6 +38,18 @@ export default {
                     });
                 }
             })
+            /*param = [{
+                method: "patch",
+                sensorId: 20,
+                status: {temp: 22.3},
+                setpoint: 22,
+                min: 10,
+                max: 90
+            }];
+            SensorsAPI(param);*/
+            /*SensorsAPI(param).then((result) => {
+                console.log(result)
+            })*/
             /*window.setInterval(() => {
                 getLastPrice.then((result) => {
                     console.log(result.data[0])

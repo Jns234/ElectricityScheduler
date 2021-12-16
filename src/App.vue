@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import APIBrux from './components/APIBrux.vue'
 //import Chart from './components/Chart.vue'
+import Agatark from './components/Agatark.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import APIBrux from './components/APIBrux.vue'
   <HelloWorld msg="Hello Vue 3 + Vite" />
   <APIBrux />
   <!--<Chart />-->
+  <Agatark />
 </template>
 
 <style>
