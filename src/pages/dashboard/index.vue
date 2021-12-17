@@ -17,5 +17,7 @@ const { t } = useI18n()
     <h1 class="text-7xl <xl:text-6xl <md:text-5xl font-500">Dashboard</h1>
 
     <ExchangePrice />
+
+    <SmartHome />
   </div>
 </template>

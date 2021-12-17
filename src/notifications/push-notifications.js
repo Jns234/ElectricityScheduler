@@ -19,8 +19,8 @@ function initializePushNotifications() {
  */
 function sendNotification() {
   //const img = "/images/jason-leung-HM6TMmevbZQ-unsplash.jpg";
-  const text = "Take a look at this brand new t-shirt!";
-  const title = "New Product Available";
+  const text = "New alert from Smart Energia!";
+  const title = "Prices are going up";
   const options = {
     body: text,
     //icon: "/images/jason-leung-HM6TMmevbZQ-unsplash.jpg",
