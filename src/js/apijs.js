@@ -82,7 +82,7 @@ var getPrice = function(mode, param){
 
 }*/
 //import { Api } from "../lib/enlife.js";
-var SensorsAPI = function(param){
+var SensorsAPI = function(){
   //console.log('here');
   //const Api = require("../lib/enlife.js").Api;
   //const Api = import("../lib/enlife.js").Api
@@ -93,13 +93,62 @@ var SensorsAPI = function(param){
     var siteId = "c640";
     var siteName = 'https://' + siteId + '.by.enlife.io';
     var wizard = false;
+    var auth = false;
 
-    const Api = require("../lib/enlife.js").Api
+    //const Api = require("../lib/enlife.js").Api
     //import { Api } from "../lib/enlife.js";
     console.log(siteName);
-    new Api(siteName);
+    //new Api(siteName);
 
-    validMethod = ["get","post","put","delete","patch"];
+    var data = {
+      "user": "apiuser",
+      "token": "00d2561caffec4e052cb05d7e5de5b8b14e9714cd08dc51af248ef49dbe8cf1d"
+    };
+    /*"Accept": "*//*",
+    "Accept-Confirm": "ok",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive"*/
+    //mode: "cors",
+    fetch(siteName+"/hello", {
+      "method": "PUT",
+      "mode": "cors",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "PUT"
+      },
+      "body": JSON.stringify(data)
+    })
+    .then(response => {
+      auth = response.authorization
+      if(!response.ok){rej("Server returned " + response.status + " : " + response.statusText);}
+      else if(!auth){rej('no auth');}
+      else{
+        fetch(siteName+"/devices?id="+heaterId, {
+          "method": "GET",
+          "mode": "cors",
+          "headers": {
+            "Accept-Confirm": "ok",
+            "Content-Type": "application/json",
+            "Authorization": auth
+          }
+        })
+        .then(response2 => {
+          if(response2.ok){
+            res(response2)
+          }
+          else{
+            rej("Server returned " + response2.status + " : " + response2.statusText);
+          }
+        })
+      }
+    })
+
+    /*validMethod = ["get","post","put","delete","patch"];
 
     param.forEach(par => {
       if(!validMethod.includes(par.method)){rej("Invalid method: '"+par.method+"'");}
@@ -112,11 +161,11 @@ var SensorsAPI = function(param){
         --
         Sample PATCH command sets device measured temperature to 22.3C, setpoint temperature to 22C and limits minimum value to 10% and maximum value to 90%.
           - status.temperature indicates the runtime value, it is non-volatile i.e. will be lost after controller restart. As there's no real temperature sensor connected, it is emulated with PATCH command
-          - other parameters in root level (e.g. setpoint and setup) map are volatile i.e. they survive controller restart. 
-          - setup.max limits max energy volume given to a device. 
+          - other parameters in root level (e.g. setpoint and setup) map are volatile i.e. they survive controller restart.
+          - setup.max limits max energy volume given to a device.
         One can change also name and other parameters, e.g. "name": "someDeviceName"
         */
-          Promise
+        /*  Promise
           .all([
             api.par.method("/devices?id="+par.sensorId, {
               "status": {"temperature": par.status.temp},
@@ -129,7 +178,7 @@ var SensorsAPI = function(param){
           console.log(res);
         })
       }
-    });
+    });*/
     /*fetch(link, {
       "method": method,
       "mode": "cors"

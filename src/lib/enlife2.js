@@ -1,15 +1,16 @@
 
-exports.Api = Api
+//exports.Api = Api
 
-const http = require("http")
+/*const http = require("http")
 const https = require("https")
 const url = require("url")
-const crypto = require("crypto")
+const crypto = require("crypto")*/
 //import http from "http";
 //import https from "https";
-//import url from "url";
+import url from "url";
 //import crypto from "crypto-js/pbkdf2";
-//import crypto from "crypto";
+import crypto from "crypto";
+//import crypto from "npm i pbkdf2-compat";
 var auth
 
 
@@ -71,7 +72,7 @@ function makeRequest(method, urlStr, data) {
 		if (auth) {
 			reqOpts.headers.Authorization = auth
 		}
-		const req = (reqOpts.protocol == "http:" ? http : https).request(reqOpts, handleResponse)
+		const req = (reqOpts.protocol == "http:" ? HTTP : HTTPS).request(reqOpts, handleResponse)
 
 		req.on("error", reject)
 		if (data) {
@@ -105,7 +106,7 @@ function makeRequest(method, urlStr, data) {
 		}
 	})
 }
-/*export {
+export {
 	Api
-};*/
+};
 
