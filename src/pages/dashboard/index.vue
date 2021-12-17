@@ -1,14 +1,21 @@
 <script setup lang="ts">
+
+//import { ref } from 'vue'
+//import { getPrice } from '~/api/api.js'
+
+/*import { Request, Response, NextFunction } from 'express'
+import axios, { AxiosResponse } from 'axios'*/
+
 const { t } = useI18n()
+
+
+
 </script>
 
 <template>
-  <div class="flex flex-row w-full">
-    <div class="w-8/12 text-left px-84px">
-      <p>side one</p>
-    </div>
-    <div class="bg-light-gray w-4/12 text-right px-84px">
-      <p>side two</p>
-    </div>
+  <div class="flex flex-col w-full dark:text-white text-black">
+    <h1 class="text-7xl <xl:text-6xl <md:text-5xl font-500">Dashboard</h1>
+
+    <ExchangePrice />
   </div>
 </template>

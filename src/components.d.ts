@@ -4,19 +4,18 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    CarbonArrowLeft: typeof import('~icons/carbon/arrow-left')['default']
     CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
-    CarbonInformation: typeof import('~icons/carbon/information')['default']
-    CarbonLanguage: typeof import('~icons/carbon/language')['default']
-    CarbonMenu: typeof import('~icons/carbon/menu')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
+    CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
+    ExchangePrice: typeof import('./components/ExchangePrice.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Footer1: typeof import('./components/Footer1.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     Menu: typeof import('./components/Menu.vue')['default']
     README: typeof import('./components/README.md')['default']
+    SmartHome: typeof import('./components/SmartHome.vue')['default']
   }
 }
 
