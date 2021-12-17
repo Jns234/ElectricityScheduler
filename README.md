@@ -1,7 +1,7 @@
 # Build (ready to deploy)
 
 ## Deployed version:
-[Go to]`https://hardcore-einstein.netlify.app`
+[Go to](https://hardcore-einstein.netlify.app) `https://hardcore-einstein.netlify.app`
 
 ### Changelog
 * Front end ready for PC
